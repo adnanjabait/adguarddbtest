@@ -23,16 +23,6 @@ const AdGuardMain = () => {
     getNotifications();
   }, []);
 
-  console.log(notifications);
-
-  const notificationsArray = Object.entries(notifications).map(([key, value]) => {
-    return {
-        id: key,
-        ...value
-    };
-  });
-
-
   return (
     <main className={styles.mainContainer}>
       <AdGuardHeader />
