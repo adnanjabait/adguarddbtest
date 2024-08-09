@@ -6,19 +6,15 @@ import React from "react";
 import styles from "./DeviceSubscription.module.css";
 
 function DeviceSubscription({ data }) {
-  const handleSubmit = () => {
-    const form = document.getElementById(data.formId)
-    console.log(form)
-  };
 
   return (
-    <form id={data.formId} method="POST" action={data.submitLink}>
+    <form id={data.formId} method="POST" action={data.submitlink}>
       <button type="submit" className={styles.container}>
         <div className={styles.deviceInfo}>
           <p className={styles.deviceLabel}>モバイル/PC 合計</p>
           <div className={styles.deviceCount}>
-            <span className={styles.countNumber}>{data.countNumber}</span>
-            <span className={styles.countUnit}>{data.countUnit}</span>
+            <span className={styles.countNumber}>{data.devicecount}</span>
+            <span className={styles.countUnit}>{data.deviceunit}</span>
           </div>
         </div>
         <p className={styles.subscriptionInfo}>月額利用登録 {data.price}円 (税込)</p>

@@ -6,21 +6,36 @@ import AdGuardHeader from "./AdGuardHeader";
 import NotificationBanner from "./NotificationBanner";
 import FeatureSection from "./FeatureSection";
 import styles from "./AdGuardStyles.module.css";
-import { fetchNotifications } from "../api/notificationApi";
+import { fetchNotifications } from "../api/queryApi";
+import { fetchAnnouncements } from "../api/queryApi";
+import AnnounceBanner from "./AnnounceBanner";
 
 const AdGuardMain = () => {
   const [notifications, setNotifications] = useState([]);
+  const [announcements, setAnnouncements] = useState([]);
 
   useEffect(() => {
     const getNotifications = async () => {
       try {
         const data = await fetchNotifications();
-        setNotifications(data);
+        setNotifications(data.data);
       } catch (error) {
         console.error("Error fetching notifications:", error);
       }
     };
     getNotifications();
+  }, []);
+
+  useEffect(() => {
+    const getAnnouncements = async () => {
+      try{
+        const data = await fetchAnnouncements();
+        setAnnouncements(data.data);
+      }catch(error) {
+        console.error("Error fetching announcements:", error);
+      }
+    };
+    getAnnouncements();
   }, []);
 
   return (
@@ -33,14 +48,12 @@ const AdGuardMain = () => {
           href={notification.link}
         />
       ))}
-      {/* <NotificationBanner
-        text="「イマドコサーチ」「ケータイお探しサービス」利用の皆さまへのお知らせ"
-        href="#notification1"
-      />
-      <NotificationBanner
-        text="「ahamo」「LINEMO」「ドコモ払い」をご利用予定またはご利用中の皆様へのお知らせ"
-        href="#notification2"
-      /> */}
+      {announcements.map((announcement, index) => (
+        <AnnounceBanner 
+          key={index}
+          {...announcement}          
+        />
+      ))}
       <FeatureSection />
       <footer className={styles.footer}>
         <a href="#purchase" className={styles.footerLink}>

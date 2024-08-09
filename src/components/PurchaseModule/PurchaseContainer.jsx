@@ -6,22 +6,17 @@ import styled from "styled-components";
 import TermsAgreement from "./TermsAgreement";
 import LoginInstructions from "./LoginInstructions";
 import SubscriptionOptions from "./SubscriptionOptions";
-import LoginButton from "./LoginButton";
 import TermsAndConditions from "./TermsAndConditions";
+import LoginForm from "../LoginForm/LoginForm";
 
 const PurchaseContainer = () => {
-  const loginData = {
-    formID: "loginForm",
-    submitLink: "/login",
-    nl: "loginNl",
-  };
 
   return (
     <StyledPurchaseContainer>
       <TermsAgreement />
       <LoginInstructions />
       <SubscriptionOptions />
-      <LoginButton {...loginData} />
+      <LoginForm />
       <TermsAndConditions />
     </StyledPurchaseContainer>
   );
@@ -34,6 +29,7 @@ const StyledPurchaseContainer = styled.main`
   align-items: center;
   color: rgba(74, 74, 74, 1);
   font: 400 14px/1 Abel, sans-serif;
+  text-align: center;
 `;
 
 export default PurchaseContainer;

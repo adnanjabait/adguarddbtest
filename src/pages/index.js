@@ -4,18 +4,15 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import AdGuardMain from "@/components/AdGuardComponents/AdGuardMain";
+import PurchaseContainer from "@/components/PurchaseModule/PurchaseContainer";
 
 const inter = Inter({ subsets: ["latin"] });
 
-
-
-
 export default function Home() {
-  
-
   return(
     <>
       <AdGuardMain />
+      <PurchaseContainer />
     </>
   );
   return (
