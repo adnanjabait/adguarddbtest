@@ -13,7 +13,7 @@ const LoginInstructions = () => {
 };
 
 const StyledLoginInstructions = styled.p`
-  margin: 12px 0 0 29px;
+  margin: 12px 0 15px 29px;
   @media (max-width: 991px) {
     max-width: 100%;
   }
