@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import AdGuardMain from "@/components/AdGuardComponents/AdGuardMain";
 import PurchaseContainer from "@/components/PurchaseModule/PurchaseContainer";
+import Footer from "@/components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,6 +14,7 @@ export default function Home() {
     <>
       <AdGuardMain />
       <PurchaseContainer />
+      <Footer/>
     </>
   );
   return (
