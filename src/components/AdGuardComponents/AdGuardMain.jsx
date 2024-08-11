@@ -7,6 +7,7 @@ import NotificationBanner from "./NotificationBanner";
 import FeatureSection from "./FeatureSection";
 import styles from "./AdGuardStyles.module.css";
 import { fetchNotifications } from "../api/notificationApi";
+import FooterLinks from "../Footer/FooterLinks/FooterLinks";
 
 const AdGuardMain = () => {
   const [notifications, setNotifications] = useState([]);
@@ -52,6 +53,7 @@ const AdGuardMain = () => {
         href="#notification2"
       /> */}
       <FeatureSection />
+      <FooterLinks/>
       <footer className={styles.footer}>
         <a href="#purchase" className={styles.footerLink}>
           AdGuardの購入 または mopitaへのログイン
