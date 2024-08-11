@@ -33,7 +33,7 @@ const StyledTermsAndConditions = styled.section`
 const Paragraph = styled.p`
   line-height: 20px;
   text-align: center;
-  margin: 17px 0 0 10px;
+  margin: 17px 0 20px 10px;
   @media (max-width: 991px) {
     max-width: 100%;
   }

@@ -56,12 +56,6 @@ const AdGuardMain = () => {
         />
       ))}
       <FeatureSection />
-      <FooterLinks/>
-      <footer className={styles.footer}>
-        <a href="#purchase" className={styles.footerLink}>
-          AdGuardの購入 または mopitaへのログイン
-        </a>
-      </footer>
     </main>
   );
 };
