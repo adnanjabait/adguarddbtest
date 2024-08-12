@@ -41,7 +41,7 @@ const StyledTermsAgreement = styled.section`
   display: flex;
   gap: 5px;
   flex-wrap: wrap;
-  margin-left: 100px;
+  justify-content: center;
   margin-bottom: 15px;
 `; 
 

@@ -12,6 +12,7 @@
   flex-wrap: wrap;
   padding: 16px;
   font: 400 14px/1 Abel, sans-serif;
+  margin-top: 12px;
 }
 
 @media (max-width: 991px) {

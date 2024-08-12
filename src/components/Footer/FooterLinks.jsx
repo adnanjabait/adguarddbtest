@@ -26,7 +26,7 @@ const [footerLinks, setFooterLinks] = useState([]);
       {footerLinks.map((link, index) => (
         <div key={index} className={styles.linkContainer}>
           {index > 0 && <div className={styles.separator}>｜</div>}
-          <a href='{link.link}' className={styles.footerLink}>
+          <a href={link.link} className={styles.footerLink}>
             {link.text}
           </a>
         </div>
