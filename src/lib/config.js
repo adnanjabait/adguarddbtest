@@ -9,7 +9,6 @@ const config = mysql.createPool({
 
 export default config;
 
-
 // import sql from 'mssql';
 
 // const config = {
