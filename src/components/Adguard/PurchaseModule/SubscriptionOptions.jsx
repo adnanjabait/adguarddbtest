@@ -3,8 +3,8 @@
  */
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import DeviceSubscription from "../DeviceSubscription/DeviceSubscription";
-import { fetchSubscriptionData } from "../api/queryApi";
+import DeviceSubscription from "../../DeviceSubscription/DeviceSubscription";
+import { fetchSubscriptionData } from "../../api/queryApi";
 
 // const [subscriptionData, setSubscriptionData] = useState(null);
 

@@ -6,8 +6,8 @@ import AdGuardHeader from "./AdGuardHeader";
 import NotificationBanner from "./NotificationBanner";
 import FeatureSection from "./FeatureSection";
 import styles from "./AdGuardStyles.module.css";
-import { fetchNotifications } from "../api/queryApi";
-import { fetchAnnouncements } from "../api/queryApi";
+import { fetchNotifications } from "../../api/queryApi";
+import { fetchAnnouncements } from "../../api/queryApi";
 import AnnounceBanner from "./AnnounceBanner";
 
 const AdGuardMain = () => {

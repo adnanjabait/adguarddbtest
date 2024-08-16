@@ -4,7 +4,7 @@
 import React,{useState,useEffect} from 'react';
 import styles from './Footer.module.css';
 import FooterLinks from './FooterLinks';
-import { fetchFooterTexts } from '../api/queryApi';
+import { fetchFooterTexts } from '../../api/queryApi';
 
 const Footer = () => {
 const [footerTexts, setFooterTexts] = useState([]);

@@ -7,7 +7,7 @@ import TermsAgreement from "./TermsAgreement";
 import LoginInstructions from "./LoginInstructions";
 import SubscriptionOptions from "./SubscriptionOptions";
 import TermsAndConditions from "./TermsAndConditions";
-import LoginForm from "../LoginForm/LoginForm";
+import LoginForm from "../../LoginForm/LoginForm";
 
 const PurchaseContainer = () => {
 

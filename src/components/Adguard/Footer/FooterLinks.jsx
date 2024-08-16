@@ -3,7 +3,7 @@
  */
 import React, {useState,useEffect} from "react";
 import styles from "./FooterLinks.module.css";
-import { fetchFooterLinks } from "../api/queryApi";
+import { fetchFooterLinks } from "../../api/queryApi";
 
 const FooterLinks = () => {
 const [footerLinks, setFooterLinks] = useState([]);

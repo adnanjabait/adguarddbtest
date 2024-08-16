@@ -4,7 +4,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import { fetchTermsLinks } from "../api/queryApi";
+import { fetchTermsLinks } from "../../api/queryApi";
 
 const TermsAgreement = () => {
   const [termsLink1, setTermsLink1] = useState([]);

@@ -3,9 +3,9 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import AdGuardMain from "@/components/AdGuardComponents/AdGuardMain";
-import PurchaseContainer from "@/components/PurchaseModule/PurchaseContainer";
-import Footer from "@/components/Footer/Footer";
+import AdGuardMain from "@/components/Adguard/AdGuardComponents/AdGuardMain";
+import PurchaseContainer from "@/components/Adguard/PurchaseModule/PurchaseContainer";
+import Footer from "@/components/Adguard/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
