@@ -10,9 +10,9 @@ function DeviceSubscription({ data }) {
       <button type="submit" className={styles.container}>
         {data.buttonhtml ? (
           <div dangerouslySetInnerHTML={{ __html: data.buttonhtml }} />
-        ) : (
+        ) : (            
             <>
-              <div className={styles.deviceInfo}>
+              <div className={styles.deviceInfo}>                
                 <p className={styles.deviceLabel}>モバイル/PC 合計</p>
                 <div className={styles.deviceCount}>
                   <span className={styles.countNumber}>{data.devicecount}</span>

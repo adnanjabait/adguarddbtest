@@ -1,0 +1,11 @@
+.servicePage {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  @media (max-width: 991px) {
+    .servicePage {
+      padding: 10px;
+    }
+  }

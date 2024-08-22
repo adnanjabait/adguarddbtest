@@ -1,0 +1,26 @@
+.footer {
+    background-color: rgba(139, 133, 150, 1);
+    color: rgba(255, 255, 255, 1);
+    font: 400 14px/20px Inter, -apple-system, Roboto, Helvetica, sans-serif;
+    padding: 16px 0;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  @media (max-width: 991px) {
+    .footer {
+      margin-top: 40px;
+      max-width: 100%;
+      white-space: initial;
+    }
+  }
+  
+  .footerItem {
+    margin: 5px 0;
+  }
+  
+  @media (max-width: 991px) {
+    .footerItem {
+      max-width: 100%;
+    }
+  }

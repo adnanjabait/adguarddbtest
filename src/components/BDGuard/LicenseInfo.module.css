@@ -1,0 +1,12 @@
+.licenseText {
+    color: rgba(255, 0, 0, 1);
+    text-align: center;
+    margin-top: 79px;
+    font: 400 13px/1 Inter, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .licenseText {
+      margin-top: 40px;
+    }
+  }

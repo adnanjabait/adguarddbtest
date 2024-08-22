@@ -23,3 +23,10 @@ Builder.registerComponent(
     name: "LoginForm",
   }
 );
+
+Builder.registerComponent(
+  dynamic(() => import("./components/PurchaseModule/LoginButton")),
+  {
+    name: "LoginButton",
+  }
+);

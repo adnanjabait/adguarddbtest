@@ -1,0 +1,89 @@
+.container {
+    background-color: #f4eded;
+    align-self: start;
+    display: flex;
+    margin-top: 117px;
+    width: 100%;
+    max-width: 1895px;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    color: #464952;
+    text-align: center;
+    padding: 49px 80px 95px;
+    font: 400 14px/1 Inter, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .container {
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+  }
+  
+  .content {
+    display: flex;
+    width: 756px;
+    max-width: 100%;
+    flex-direction: column;
+  }
+  
+  .heading {
+    font-size: 17px;
+    font-weight: 700;
+    align-self: center;
+  }
+  
+  @media (max-width: 991px) {
+    .heading {
+      max-width: 100%;
+    }
+  }
+  
+  .infoText {
+    margin: 47px 0 0 11px;
+  }
+  
+  @media (max-width: 991px) {
+    .infoText {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  .loginInfo {
+    margin-top: 51px;
+  }
+  
+  @media (max-width: 991px) {
+    .loginInfo {
+      max-width: 100%;
+      margin: 40px 10px 0 0;
+    }
+  }
+  
+  .paymentInfo {
+    color: #000;
+    line-height: 20px;
+    margin: 193px 0 0 22px;
+  }
+  
+  @media (max-width: 991px) {
+    .paymentInfo {
+      max-width: 100%;
+      margin: 40px 4px 0 0;
+    }
+  }
+  
+  .subscriptionInfo {
+    color: #000;
+    line-height: 20px;
+    margin: 61px 22px 0 17px;
+  }
+  
+  @media (max-width: 991px) {
+    .subscriptionInfo {
+      max-width: 100%;
+      margin: 40px 10px 0 0;
+    }
+  }

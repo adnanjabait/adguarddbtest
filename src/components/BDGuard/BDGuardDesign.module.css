@@ -1,0 +1,98 @@
+.container {
+  background-color: #fff;
+  display: flex;
+  padding-bottom: 1825px;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: center;
+  font: 400 14px Inter, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .container {
+    padding-bottom: 100px;
+  }
+}
+
+.heroImage {
+  aspect-ratio: 3.91;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .heroImage {
+    max-width: 100%;
+  }
+}
+
+.description {
+  color: #464952;
+  line-height: 24px;
+  align-self: center;
+  margin-top: 10px;
+  width: 884px;
+}
+
+@media (max-width: 991px) {
+  .description {
+    max-width: 100%;
+  }
+}
+
+.notice {
+  background-color: #e5e5e5;
+  margin-top: 10px;
+  width: 100%;
+  color: #ff4500;
+  white-space: nowrap;
+  line-height: 1;
+  padding: 28px 70px;
+}
+
+@media (max-width: 991px) {
+  .notice {
+    max-width: 100%;
+    white-space: initial;
+    padding: 0 20px;
+  }
+}
+
+.noticeLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.noticeLink:hover {
+  text-decoration: underline;
+}
+
+.maintenanceNotice {
+  color: #e22525;
+  font-size: 15px;
+  line-height: 1;
+  align-self: center;
+  margin-top: 31px;
+}
+
+.maintenanceLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.maintenanceLink:hover {
+  text-decoration: underline;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
