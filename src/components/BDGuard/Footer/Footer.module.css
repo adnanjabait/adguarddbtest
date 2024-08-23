@@ -1,0 +1,58 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  font: 400 14px/1 Inter, sans-serif;
+}
+
+.licenseInfo {
+  color: #ff0000;
+  font-size: 13px;
+  align-self: center;
+}
+
+.middleFooter {
+  background-color: #8b8596;
+  display: flex;
+  margin-top: 44px;
+  flex-direction: column;
+  overflow: hidden;
+  line-height: 20px;
+  justify-content: center;
+  padding: 16px 0;
+}
+
+.footerLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bottomFooter {
+  background-color: #847373;
+  overflow: hidden;
+  padding: 36px 70px;
+}
+
+.linkGroup {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.linkItem {
+  margin: 0 5px;
+}
+
+@media (max-width: 991px) {
+  .middleFooter {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+  .bottomFooter {
+    max-width: 100%;
+    margin-right: 4px;
+    padding: 0 20px;
+  }
+}

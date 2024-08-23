@@ -1,0 +1,157 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 23px;
+  }
+  
+  .heading {
+    color: #000;
+    text-align: center;
+    font: 400 15px/1 Inter, sans-serif;
+  }
+  
+  .overview {
+    color: #464952;
+    text-align: center;
+    margin-top: 91px;
+    font: 400 14px/1 Inter, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .overview {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  .servicesContainer {
+    margin-top: 112px;
+    width: 100%;
+    max-width: 1547px;
+  }
+  
+  @media (max-width: 991px) {
+    .servicesContainer {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  .servicesGrid {
+    gap: 20px;
+    display: flex;
+  }
+  
+  @media (max-width: 991px) {
+    .servicesGrid {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  }
+  
+  .serviceColumn {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 33%;
+    margin-left: 0;
+  }
+  
+  @media (max-width: 991px) {
+    .serviceColumn {
+      width: 100%;
+    }
+  }
+  
+  .subscriptionInfo {
+    background-color: #f4eded;
+    align-self: stretch;
+    display: flex;
+    margin-top: 103px;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    color: #464952;
+    text-align: center;
+    justify-content: center;
+    padding: 74px 80px;
+    font: 400 14px/1 Inter, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .subscriptionInfo {
+      max-width: 100%;
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+  }
+  
+  .subscriptionContent {
+    display: flex;
+    width: 756px;
+    max-width: 100%;
+    flex-direction: column;
+  }
+  
+  .subscriptionHeading {
+    font-size: 17px;
+    font-weight: 700;
+    align-self: center;
+  }
+  
+  @media (max-width: 991px) {
+    .subscriptionHeading {
+      max-width: 100%;
+    }
+  }
+  
+  .monthlyInfo {
+    margin-top: 42px;
+  }
+  
+  @media (max-width: 991px) {
+    .monthlyInfo {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  .purchaseInfo {
+    margin-top: 45px;
+  }
+  
+  @media (max-width: 991px) {
+    .purchaseInfo {
+      max-width: 100%;
+      margin: 40px 4px 0 0;
+    }
+  }
+  
+  .paymentInfo {
+    color: #000;
+    line-height: 20px;
+    margin: 187px 10px 0;
+  }
+  
+  @media (max-width: 991px) {
+    .paymentInfo {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  .subscriptionDetails {
+    color: #000;
+    line-height: 20px;
+    margin: 66px 10px 0;
+  }
+  
+  @media (max-width: 991px) {
+    .subscriptionDetails {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }

@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 import styles from './ServiceCard.module.css';
 
-const ServiceCard = ({ imgSrc, title, description }) => {
+function ServiceCard({ imageSrc, title, description }) {
   return (
     <article className={styles.serviceCard}>
-      <img loading="lazy" src={imgSrc} alt={`${title} service icon`} className={styles.serviceIcon} />
-      <h2 className={styles.serviceTitle}>{title}</h2>
+      <img loading="lazy" src={imageSrc} alt={title} className={styles.serviceImage} />
+      <h3 className={styles.serviceTitle}>{title}</h3>
       <p className={styles.serviceDescription}>{description}</p>
     </article>
   );
-};
+}
 
 export default ServiceCard;

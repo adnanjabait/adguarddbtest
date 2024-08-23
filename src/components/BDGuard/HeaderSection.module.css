@@ -1,20 +1,11 @@
 .container {
-  background-color: #fff;
   display: flex;
-  padding-bottom: 1825px;
   flex-direction: column;
-  overflow: hidden;
   text-align: center;
   font: 400 14px Inter, sans-serif;
 }
 
-@media (max-width: 991px) {
-  .container {
-    padding-bottom: 100px;
-  }
-}
-
-.heroImage {
+.headerImage {
   aspect-ratio: 3.91;
   object-fit: contain;
   object-position: center;
@@ -22,67 +13,48 @@
 }
 
 @media (max-width: 991px) {
-  .heroImage {
+  .headerImage {
     max-width: 100%;
   }
 }
 
-.description {
+.infoText {
   color: #464952;
   line-height: 24px;
   align-self: center;
-  margin-top: 10px;
+  margin-top: 21px;
   width: 884px;
 }
 
 @media (max-width: 991px) {
-  .description {
+  .infoText {
     max-width: 100%;
   }
 }
 
 .notice {
-  background-color: #e5e5e5;
-  margin-top: 10px;
-  width: 100%;
+  background-color: white;
+  margin-top: 15px;
   color: #ff4500;
   white-space: nowrap;
   line-height: 1;
-  padding: 28px 70px;
+  padding: 24px 70px;
 }
 
 @media (max-width: 991px) {
   .notice {
     max-width: 100%;
     white-space: initial;
-    padding: 0 20px;
+    padding: 24px 20px;
   }
 }
 
-.noticeLink {
-  color: inherit;
-  text-decoration: none;
-}
-
-.noticeLink:hover {
-  text-decoration: underline;
-}
-
-.maintenanceNotice {
+.linkText {
   color: #e22525;
   font-size: 15px;
   line-height: 1;
   align-self: center;
   margin-top: 31px;
-}
-
-.maintenanceLink {
-  color: inherit;
-  text-decoration: none;
-}
-
-.maintenanceLink:hover {
-  text-decoration: underline;
 }
 
 .visually-hidden {

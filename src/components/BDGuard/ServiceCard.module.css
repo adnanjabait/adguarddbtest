@@ -1,29 +1,13 @@
 .serviceCard {
     display: flex;
-    min-height: 290px;
+    min-height: 285px;
     flex-direction: column;
     overflow: hidden;
+    align-items: center;
     color: #000;
     text-align: center;
-    justify-content: flex-start;
-    font: 400 14px/20px Inter, -apple-system, Roboto, Helvetica, sans-serif;
-  }
-  
-  .serviceIcon {
-    aspect-ratio: 1;
-    object-fit: contain;
-    object-position: center;
-    width: 148px;
-    align-self: center;
-    max-width: 100%;
-  }
-  
-  .serviceTitle {
-    margin-top: 18px;
-  }
-  
-  .serviceDescription {
-    margin-top: 18px;
+    justify-content: center;
+    font: 400 14px Inter, sans-serif;
   }
   
   @media (max-width: 991px) {
@@ -31,8 +15,27 @@
       max-width: 100%;
       margin-top: 40px;
     }
+  }
   
-    .serviceTitle,
+  .serviceImage {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 148px;
+    max-width: 100%;
+  }
+  
+  .serviceTitle {
+    line-height: 1;
+    margin-top: 18px;
+  }
+  
+  .serviceDescription {
+    line-height: 20px;
+    margin-top: 18px;
+  }
+  
+  @media (max-width: 991px) {
     .serviceDescription {
       max-width: 100%;
     }

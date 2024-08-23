@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  max-width: 619px;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 13px;
+}
+
+.loginButton {
+  margin-top: 23px;
+}
