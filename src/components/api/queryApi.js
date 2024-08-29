@@ -48,6 +48,16 @@ export const fetchLoginData = async () => {
     return await calltoApi(query,values);
 };
 
+export const fetchFooterLinks = async () => {
+    const query = `SELECT * FROM linkwithtext where section = 'footerlink'`;
+    const values = [];
+    return await calltoApi(query,values);
+};
+export const fetchFooterTexts = async () => {
+    const query = `SELECT * FROM linkwithtext where section = 'footertext'`;
+    const values = [];
+    return await calltoApi(query,values);
+};
 
 
   
