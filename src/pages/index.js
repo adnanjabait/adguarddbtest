@@ -13,8 +13,8 @@ export default function Home() {
   return(
     <>
       <AdGuardMain />
-      <PurchaseContainer />
-      <Footer/>
+      {/* <PurchaseContainer />
+      <Footer/> */}
     </>
   );
   return (

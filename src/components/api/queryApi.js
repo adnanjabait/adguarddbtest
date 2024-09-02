@@ -1,4 +1,4 @@
-const calltoApi = async (query,values) => {
+const calltoApi = async (query,values) => {    
     try {
         const response = await fetch("/api/db", {
             method: 'POST',
@@ -19,45 +19,51 @@ const calltoApi = async (query,values) => {
 }
 
 export const fetchNotifications = async () => {
-    const query = `SELECT * FROM linkwithtext where section='notificationbanner'`;
+    const query = `SELECT TOP 10 * FROM [SalesLT].[Address] `;
     const values = [];
     return await calltoApi(query,values);
 };
 
-export const fetchAnnouncements = async () => {
-    const query = `SELECT * FROM linkwithtext where section='announcebanner'`;
-    const values = [];
-    return await calltoApi(query,values);
-};
+// export const fetchNotifications = async () => {
+//     const query = `SELECT * FROM linkwithtext where section='notificationbanner'`;
+//     const values = [];
+//     return await calltoApi(query,values);
+// };
 
-export const fetchTermsLinks = async () => {
-    const query = `SELECT * FROM linkwithtext where section='termslink'`;
-    const values = [];
-    return await calltoApi(query,values);
-};
+// export const fetchAnnouncements = async () => {
+//     const query = `SELECT * FROM linkwithtext where section='announcebanner'`;
+//     const values = [];
+//     return await calltoApi(query,values);
+// };
 
-export const fetchSubscriptionData = async () => {
-    const query = `SELECT * FROM buttondata where section='subscriptionbutton'`;
-    const values = [];
-    return await calltoApi(query,values);
-};
+// export const fetchTermsLinks = async () => {
+//     const query = `SELECT * FROM linkwithtext where section='termslink'`;
+//     const values = [];
+//     return await calltoApi(query,values);
+// };
 
-export const fetchLoginData = async () => {
-    const query = `SELECT * FROM buttondata where section='loginbutton'`;
-    const values = [];
-    return await calltoApi(query,values);
-};
+// export const fetchSubscriptionData = async () => {
+//     const query = `SELECT * FROM buttondata where section='subscriptionbutton'`;
+//     const values = [];
+//     return await calltoApi(query,values);
+// };
 
-export const fetchFooterLinks = async () => {
-    const query = `SELECT * FROM linkwithtext where section = 'footerlink'`;
-    const values = [];
-    return await calltoApi(query,values);
-};
-export const fetchFooterTexts = async () => {
-    const query = `SELECT * FROM linkwithtext where section = 'footertext'`;
-    const values = [];
-    return await calltoApi(query,values);
-};
+// export const fetchLoginData = async () => {
+//     const query = `SELECT * FROM buttondata where section='loginbutton'`;
+//     const values = [];
+//     return await calltoApi(query,values);
+// };
+
+// export const fetchFooterLinks = async () => {
+//     const query = `SELECT * FROM linkwithtext where section = 'footerlink'`;
+//     const values = [];
+//     return await calltoApi(query,values);
+// };
+// export const fetchFooterTexts = async () => {
+//     const query = `SELECT * FROM linkwithtext where section = 'footertext'`;
+//     const values = [];
+//     return await calltoApi(query,values);
+// };
 
 
   
