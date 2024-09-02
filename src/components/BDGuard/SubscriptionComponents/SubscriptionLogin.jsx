@@ -13,11 +13,30 @@ const SubscriptionLogin = () => {
 
   return (
     <section className={styles.container}>
-      <Button onClick={handleSubscription}>
-        月額利用登録（入会）　月額275円（税込）
-      </Button>
-      <div className={styles.loginButton}>
-        <Button onClick={handleLogin}>mopitaにログイン</Button>
+      <div className={styles.formContainer}>
+        <form id="formSubscribe" action="https://devwww.mopita.com/cp/regist" method="post">
+          <p>
+            <Button type="submit" onClick={handleSubscription}>
+              [STG] バングラライセンス管理システム 550円 (税込)
+            </Button>
+          </p>
+          <input type="hidden" name="ci" value="R000002750" />
+          <input type="hidden" name="act" value="reg" />
+          <input type="hidden" name="nl" value="https://stg.imasale.com//member" />
+          <input type="hidden" name="cl" value="https://stg.imasale.com//top" />
+          <input type="hidden" name="fl" value="https://stg.imasale.com//top" />
+        </form>
+      </div>
+
+      <div className={`${styles.formContainer} ${styles.loginButton}`}>
+        <form id="formLogin" action="https://devwww.mopita.com/cp/login" method="post">
+          <p>
+            <Button type="submit" onClick={handleLogin}>
+              mopitaにログイン
+            </Button>
+          </p>
+          <input type="hidden" name="nl" value="https://stg.imasale.com//top" />
+        </form>
       </div>
     </section>
   );

@@ -11,11 +11,12 @@ function Member() {
             <AdGuardMain />    
             
             <div className={styles2.adGuardLicenseKeyHelloSudipto112233445566}>
-                <span style={{ fontWeight: 700 }}>AdGuard License Key</span>
-                <br />
+                <span style={{ fontWeight: 700 }}>BDGuard License Key</span>
+                <br /><br /><br />
                 <span style={{ color: 'rgba(5,184,12,1)' }}>
-                HelloSudipto112233445566
+                  SudiptoSarker1122334455667788
                 </span>
+                <br /><br /><br /><br /><br /><br /><br />
             </div>
 
             <Footer />

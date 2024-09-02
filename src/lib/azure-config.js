@@ -1,19 +1,13 @@
-// /lib/db.js
-
 import sql from 'mssql';
 
 const config = {
-    //   user: process.env.DB_USER,
-    // password: process.env.DB_PASSWORD,
-    // server: process.env.DB_SERVER, 
-    // database: process.env.DB_DATABASE,
-    user: 'lmsadmin',    
-    password: 'lms@##221',
-    server: 'licensetestdemo.database.windows.net', 
-    database: 'LicenseDB',
+    user: process.env.NEXT_PUBLIC_DB_USER,
+    password: process.env.NEXT_PUBLIC_DB_PASSWORD,
+    server: process.env.NEXT_PUBLIC_DB_SERVER,
+    database: process.env.NEXT_PUBLIC_DB_DATABASE,
     options: {
         encrypt: true, 
-        enableArithAbort: true,
+        enableArithAbort: true, 
     },
 };
 

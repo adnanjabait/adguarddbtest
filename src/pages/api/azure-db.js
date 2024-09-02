@@ -1,9 +1,8 @@
-import config from '@/lib/azure-config';
-import mysql from 'mysql2/promise';
+import { queryDatabase } from '@/lib/azure-config';
 
 export default async function handler(req, res) {
-    if(req.method !== 'POST') {
-        return res.status(405).json({error : 'Method not allowed'});
+    if (req.method !== 'POST') {
+        return res.status(405).json({ error: 'Method not allowed' });
     }
 
     const { query, values } = req.body;
@@ -13,11 +12,9 @@ export default async function handler(req, res) {
     }
 
     try {
-        const [rows] = await config.query(query, values);
-        res.status(200).json({data: rows});
-    } catch(error) {
-        res.status(500).json({error: error.message});
+        const rows = await queryDatabase(query, values);
+        res.status(200).json({ data: rows });
+    } catch (error) {
+        res.status(500).json({ error: error.message });
     }
-
-    
 }
