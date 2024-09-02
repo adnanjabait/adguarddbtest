@@ -9,7 +9,7 @@ function Member() {
   const router = useRouter();
 
   const handleRedirect = () => {    
-    router.push('/member?ci=R000002750&logincat=0001');
+    router.push('/member');
   };
 
 

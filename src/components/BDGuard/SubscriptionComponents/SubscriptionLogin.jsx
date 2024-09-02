@@ -22,9 +22,9 @@ const SubscriptionLogin = () => {
           </p>
           <input type="hidden" name="ci" value="R000002750" />
           <input type="hidden" name="act" value="reg" />
-          <input type="hidden" name="nl" value="https://stg.imasale.com//member" />
-          <input type="hidden" name="cl" value="https://stg.imasale.com//top" />
-          <input type="hidden" name="fl" value="https://stg.imasale.com//top" />
+          <input type="hidden" name="nl" value="https://stg.imasale.com/member" />
+          <input type="hidden" name="cl" value="https://stg.imasale.com/top" />
+          <input type="hidden" name="fl" value="https://stg.imasale.com/top" />
         </form>
       </div>
 
@@ -35,7 +35,7 @@ const SubscriptionLogin = () => {
               mopitaにログイン
             </Button>
           </p>
-          <input type="hidden" name="nl" value="https://stg.imasale.com//top" />
+          <input type="hidden" name="nl" value="https://stg.imasale.com/top" />
         </form>
       </div>
     </section>
