@@ -1,8 +1,20 @@
 import React from 'react';
 import Button from './Button';
 import styles from './SubscriptionLogin.module.css';
+import Cookies from 'js-cookie';
+import { useState,useEffect } from 'react';
 
 const SubscriptionLogin = () => {
+
+  const [cookieData,setCookieData] = useState(null);
+
+  useEffect(()=>{
+    let cookieValue = Cookies.get('iai_mtisess_secure');
+    if(cookieValue!=null || cookieValue !='' || cookieValue!=undefined){
+      setCookieData(cookieValue);
+    }
+},[]);
+
   const handleSubscription = () => {
     console.log('Subscription button clicked');
   };
@@ -28,7 +40,8 @@ const SubscriptionLogin = () => {
         </form>
       </div>
 
-      <div className={`${styles.formContainer} ${styles.loginButton}`}>
+    {cookieData==null &&
+        <div className={`${styles.formContainer} ${styles.loginButton}`}>
         <form id="formLogin" action="https://devwww.mopita.com/cp/login" method="post">
           <p>
             <Button type="submit" onClick={handleLogin}>
@@ -38,6 +51,8 @@ const SubscriptionLogin = () => {
           <input type="hidden" name="nl" value="https://stg.imasale.com/top" />
         </form>
       </div>
+    }
+
     </section>
   );
 };
