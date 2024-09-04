@@ -5,7 +5,7 @@ import FooterLink from './FooterLink';
 const footerLinks = [
   [
     { text: 'お問い合わせ', href: '#contact' },
-    { text: '会員解除', href: '#cancel' }
+    { text: '会員解除', href: '/unsubscribe' }  // Updated URL for 会員解除
   ],
   [
     { text: 'mopita', href: '#mopita' },
