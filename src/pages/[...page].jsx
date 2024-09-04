@@ -64,7 +64,8 @@ export default function Page({ page }) {
   return (
     <>
       <Head>
-        <title>{page?.data?.title}</title>
+        <title>License Management System</title>
+        <meta name="mobile-web-app-capable" content="yes"></meta>
       </Head>
       {/* Render the Builder page */}
       <BuilderComponent model="page" content={page || undefined} />
